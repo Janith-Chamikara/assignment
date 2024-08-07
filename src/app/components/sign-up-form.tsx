@@ -36,7 +36,7 @@ export default function SignUpForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="w-full min-h-full justify-between flex flex-col"
+      className="w-full mt-[20px] min-h-full justify-between flex flex-col"
     >
       <FormField
         type="text"
@@ -77,14 +77,16 @@ export default function SignUpForm() {
       </div>
       <SubmitButton disabled={isSubmitting}>Sign up</SubmitButton>
       <div className="text-[20px] font-[400]">
-        Already have an account
+        Already have an account?
         <a href="/sign-in" className="text-sign-up-main text-[20px] font-[500]">
           Sign in
         </a>
       </div>
       <div className="flex flex-row items-center">
         <Seperator variant="sign-up" />
-        <span className="text-[15px] mx-4 font-[400]">Or continue with</span>
+        <span className="text-[15px] mx-4 text-nowrap font-[400]">
+          Or continue with
+        </span>
         <Seperator variant="sign-up" />
       </div>
       <div className="flex flex-row justify-between w-full">
