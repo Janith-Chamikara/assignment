@@ -9,8 +9,7 @@ export const loginSchema: ZodType = z.object({
 });
 export const signUpSchema: ZodType = z.object({
   email: z.string().email(),
-  firstName: z.string().min(3, { message: "Please provide your name" }),
-  lastName: z.optional(z.string()),
+  fullName: z.string().min(3, { message: "Please provide your name" }),
   password: z
     .string()
     .min(8, { message: "Password is too short" })
