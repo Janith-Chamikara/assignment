@@ -35,7 +35,7 @@ export default function SignInForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="w-full min-h-full justify-between flex flex-col"
+      className="w-full mt-[20px] min-h-full justify-between flex flex-col"
     >
       <FormField
         type="email"
@@ -75,7 +75,9 @@ export default function SignInForm() {
       </div>
       <div className="flex flex-row items-center">
         <Seperator variant="sign-in" />
-        <span className="text-[15px] mx-4 font-[400]">Or continue with</span>
+        <span className="text-[15px] mx-4 font-[400] text-nowrap">
+          Or continue with
+        </span>
         <Seperator variant="sign-in" />
       </div>
       <div className="flex flex-row justify-between">
